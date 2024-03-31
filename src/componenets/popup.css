@@ -1,0 +1,85 @@
+
+
+.popup{
+    width: 30rem;
+    min-height: 15rem;
+    background: rgb(230, 227, 227);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;  border-radius: 50px;
+    position: absolute;
+    top: 10rem;
+    left: 38%;
+  }
+  
+  
+  .usernameSpan{
+    font-size: 18px;
+    color: #1159cc;
+    /* background-color: #3b82f6; */
+    font-weight: bold;
+    padding-left: 1.5rem;
+  }
+  
+  
+  .card {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    /* position: absolute;
+    top: 10rem;
+    left: 35%; */
+  }
+  
+  .card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .picImagesProfile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .imgProfileIndiv{
+    /* background-color: #15A986; */
+    width: 140px;
+    height: 130px;
+    margin-top: 1rem;
+    border: 1px solid rgb(193, 191, 191);
+    border-radius: 10px;
+    
+  }
+  .imgProfileIndiv:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .card .picImagesProfile .imgProfileIndiv img{
+    width: 90%;
+    border-radius: 50%;
+  }
+  
+  .btnClosePicProfile{
+    margin-top: 1rem;
+    font-family: monospace;
+    background-color: #dde5f3;
+    color: #0060fa;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+  }
+  .btnClosePicProfile:hover{
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  
+  

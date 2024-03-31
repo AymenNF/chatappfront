@@ -1,0 +1,1195 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+  }
+  body{
+    background-color: #F1F1F1;
+  }
+  
+  
+  
+  /* Login page */
+  .Logincontainer{
+    display: flex;
+    background-color: #F1F1F1;
+  }
+  .leftSide{
+    width: 35%;
+    background-color: #FFC49A;
+    height: 100vh;
+    color: white;
+  
+  }
+  
+  .leftSide h1{
+    padding-top: 30%;
+    padding-left: 3rem;
+    font-size: 40px;
+  }
+  
+  .leftSide p{
+    /* background-color: aqua; */
+    font-size: 20px;
+    padding-left: 3rem;
+    width: 75%;
+  }
+  .leftSide .imageContainer{
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  }
+  
+  .imageContainer img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+  
+  
+  
+  
+  
+  .containerRightSide{
+    width: 60%;
+    margin-left: auto;
+  }
+  
+  .rightSide{
+    width: 70%;
+    padding-left: 5rem;
+    
+  }
+  .rightSide h1{
+    margin-top: 8rem;
+    font-size: 33px;
+  }
+  
+  
+  .coolinput {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    width: 80%;
+  }
+  
+  .coolinput label.text {
+    color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+    top: 0.6rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: transparent;
+    width: fit-content;
+  }
+  
+  .coolinput .input {
+    padding: 11px 10px;
+    font-size: 0.8rem;
+    border: 2px #e9dbd1 solid;
+    border-radius: 5px;
+    background: #ffffff;
+    width: 100%;
+  }
+  
+  .coolinput .input:focus {
+    outline: none;
+  }
+  .rightSide .btnConnect{
+    background-color: #FFC49A;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+    font-weight: bold;
+    font-size: 16px;
+  
+  }
+  .rightSide .btnConnect:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #f3b78d;
+  
+  }
+  
+  .rightSide button{
+    background-color: #F5F5F5;
+    border: none;
+    width: 80%;
+    height: 2.5rem;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+    border: 1px solid rgb(118, 118, 118);
+    font-weight: bold;
+    margin-top: 1rem;
+  
+  }
+  .rightSide button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #e4e1e1;
+    border: 1px solid rgb(214, 214, 214);
+  
+  }
+  
+  .rightSide a{
+    color: #f58f46;
+    font-weight: bold;
+  }
+  
+  .rightSide a:hover{
+    color: #f03920;
+  }
+  
+  
+  .line {
+    margin-top: 1rem;
+    height: 2px;
+    width: 20%; 
+    background-color: black; 
+  }
+  
+  .lineOr {
+    margin: 0 10px ;
+    margin-top: 1rem;
+  }
+  
+  @media screen and (max-width:1000px) {
+    .leftSide h1{
+      font-size: 30px;
+    }
+    .leftSide p{
+      font-size: 15px;
+    }
+    .containerRightSide{
+      width: 50%;
+      margin-right: auto;
+    }
+    .rightSide button{
+      font-size: 13px;
+    }
+    .rightSide .btnConnect{
+      font-size: 13px;
+    }
+    .coolinput label.text {
+      font-size: 13px;
+    }
+    
+    
+  }
+  
+  @media screen and (max-width:500px) {
+    .leftSide{
+      display: none;
+    }
+    .containerRightSide{
+      width: 100%;
+    }
+  
+    .rightSide button{
+      font-size: 12px;
+    }
+    .rightSide .btnConnect{
+      font-size: 12px;
+    }
+    .coolinput label.text {
+      font-size: 12px;
+    }
+    
+  }
+  
+  
+  
+  /* SignIn */
+  
+  
+  
+  /* Profile page */
+  
+  .ProfileContainer{
+    width: 80%;
+    margin-left: 15%;
+  }
+  
+  .couvertureContainer{
+    width: 100%;
+    height: 300px;
+  }
+  .couvertureContainer img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profilePicture{
+    width: 10rem;
+    position: absolute;
+    top: 14rem;
+    left: 50%;
+    text-align: center;
+  
+  }
+  .profilePicture img{
+    width: 70%;
+    border-radius: 50%;
+    height: 6rem;
+  }
+  .dataContainerBar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F4FDFF;
+    height: 4rem;
+  }
+  
+  .leftDataContainerBar{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #8F8F8F;
+  }
+  .righDataContainerBar{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #8F8F8F;
+  }
+  
+  .dataContainerInfos{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leftDataContainer{
+    width: 18%;
+    background-color: #F4FDFF;
+  
+  }
+  .MiddleDataContainer{
+    width: 60%;
+  }
+  .rightDataContainer{
+    width: 18%;
+    background-color: #F4FDFF;
+  
+  }
+  .postBox{
+    background-color: #F4FDFF;
+    padding: 1rem;
+  }
+  
+  .postHeader{
+    display: flex;
+    align-items: center;
+  
+  }
+  .postHeader img{
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+  
+  }
+  .postHeader h4{
+    margin-left: 1rem;
+  }
+  
+  .imagePostInfos {
+    text-align: center;
+  }
+  
+  
+  
+  /* Messages */
+  .containerMessagesComponent{
+    margin-left: 8rem;
+    margin-top: 2rem;
+  }
+  
+  .ContainerMessages{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;  
+  }
+  .containerFriends{
+    width: 100%;
+    height: 80vh;
+    background-color: #F4FDFF;
+    overflow: auto;
+  }
+  
+  .containerConversation{
+    width: 50%;
+    background-color: #F4FDFF;
+  }
+  
+  .headerFriends{
+    width: 90%;
+    margin: auto;
+    height: 8rem;
+  }
+  .convCont{
+    display: flex;
+    /* justify-content: space-between; */
+    overflow: auto;
+    /* background-color: #15A986; */
+    width: 90%;
+  }
+  .friendDiv{
+    width: 5rem;
+    height: 60%;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem; 
+    padding-right: 0.5rem; 
+  
+  }
+  .friendDiv img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+  }
+  .friendDiv:hover{
+    cursor: pointer;
+    background-color: #e6ebea;
+    border-radius: 5px;
+  }
+  
+  .searchBarConversations{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    margin: auto;
+    margin-top: 1.8rem;
+  }
+  
+  
+  
+  .form {
+    --input-bg: #edeaea;
+    --padding: 1.5em;
+    --rotate: 80deg;
+    --gap: 2em;
+    --icon-change-color: #15A986;
+    --height: 3rem;
+    width: 90%;
+    padding-inline-end: 1em;
+    background: var(--input-bg);
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .form label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--height);
+  }
+  
+  .form input {
+    width: 100%;
+    padding-inline-start: calc(var(--padding) + var(--gap));
+    outline: none;
+    background: none;
+    border: 0;
+  }
+  .form svg {
+    color: #111;
+    transition: 0.3s cubic-bezier(.4,0,.2,1);
+    position: absolute;
+    height: 15px;
+  }
+  /* search icon */
+  .icon {
+    position: absolute;
+    left: var(--padding);
+    transition: 0.3s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* arrow-icon*/
+  .swap-off {
+    transform: rotate(-80deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button */
+  .close-btn {
+    /* removing default bg of button */
+    background: none;
+    border: none;
+    right: calc(var(--padding) - var(--gap));
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+  }
+  
+  .form input:focus ~ .icon {
+    transform: rotate(var(--rotate)) scale(1.3);
+  }
+  
+  .form input:focus ~ .icon .swap-off {
+    opacity: 1;
+    transform: rotate(-80deg);
+    visibility: visible;
+    color: var(--icon-change-color);
+  }
+  
+  .form input:focus ~ .icon .swap-on {
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .form input:valid ~ .icon {
+    transform: scale(1.3) rotate(var(--rotate))
+  }
+  
+  .form input:valid ~ .icon .swap-off {
+    opacity: 1;
+    visibility: visible;
+    color: var(--icon-change-color);
+  }
+  
+  .form input:valid ~ .icon .swap-on {
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .form input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0s;
+  }
+  
+  
+  .userMessage{
+    display: flex;
+    align-items: center;
+    margin-left: 0rem;
+    /* margin-top: 1rem; */
+    width: 100%;
+    /* background-color: #15A986; */
+    margin-top: 1rem;
+
+  }
+  .userMessage:hover{
+    cursor: pointer;
+    background-color: #dbdcdc;
+    border-radius: 5px;
+  }
+  
+  .pictureUserMsg{
+    width: 20%;
+    padding: 0.5rem;
+  
+  }
+  .pictureUserMsg img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  
+  .dataUserMsg h4{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .dataUserMsg p{
+    font-size: 14px;
+  }
+  .dataUserMsg{
+    margin-left: 2rem;
+    display: grid;
+    /* grid-gap: -5px; */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Conversation */
+  /* Your CSS file */
+  
+  .containerMessagesConversation {
+    height: 56vh;
+    overflow-y: auto;
+      scrollbar-width: thin;
+    scrollbar-color: darkgrey lightgrey;
+    
+  
+  }
+  .senderDiv img{
+   
+   margin-left: 3%;
+  }
+  
+  
+  .MessagesDetailsDiv img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1rem;
+  
+  }
+  #SenderPic{
+    width: 70px;
+    height: 70px;
+  }
+  #ReceiverPic{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .receiver{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    height: 2rem;
+  }
+  .receiver h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .receiver img{
+    width: 70px;
+    height: 70px;
+  }
+  
+
+
+  .senderDiv{
+    /* background-color: #15A986; */
+    width: 80%;
+    /* background-color: #15A986; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ReceiverDiv{
+    margin-left: 10%;
+    /* background-color: #15A986; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .textContainerConvSender{
+    background-color: transparent;
+    width: 20rem;
+    height: 2.5rem;
+    display: flex;
+    padding-top: 0.5rem;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 1rem;
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.25); */
+    /* padding-bottom: -0.5rem; */
+  }
+
+
+  .textContainerConvReceiver{
+    background-color: #FFC49A;
+    width: 15rem;
+    /* height: 2.5rem; */
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    height: auto;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  }
+  
+  .containerInputConversation{
+    padding-bottom: 1rem;
+  }
+  
+  .Message {
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #E7E7E7;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+    margin: auto;
+    padding-top: 0.8rem;
+    /* margin-top: -10px; */
+   }
+   .MessageEnv{
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #E7E7E7;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+    margin: auto;
+    padding-top: 0.8rem;
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+   }
+  
+  .MsgInput {
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #E7E7E7;
+    border: none;
+    outline: none;
+    width: 85%;
+    /* margin: auto; */
+    height: 1rem;
+    transform: translate(5px,-3px);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .SendSVG {
+    width: 30px;
+    height: 30px;
+    border-width: 50px;
+    transform: translate(40px,-4px);
+    background-size: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #FFC49A;
+  }
+  
+  .SendSVG:hover {
+    background-color: #ebaa7c;
+    cursor: pointer;
+  }
+  
+  .l {
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #2e2f38;
+    transform: translate(0px,-4px);
+  }
+  
+  
+  
+  /* -------------- */
+  
+  .App-header{
+    background-color:  var(--body_background);
+    color: var(--body_color);
+  }
+  .logo{
+    border-radius: 100%;
+  }
+  .profile-icon{
+    margin-bottom: 10px;
+  
+  }
+  /* removing default style of button */
+  .form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 300px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background-color: #EFEFEF;
+  
+  }
+  
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  
+  }
+  
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /* SearchForm.css (ou utilisez le module de style si vous utilisez Create React App) */
+  
+  
+  .logo{
+    border-radius: 100%;
+  }
+  .profile-icon{
+    margin-bottom: 10px;
+  
+  }
+  /* removing default style of button */
+  .formNavbar button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  
+  /* styling of whole input container */
+  .formNavbar {
+    --timing: 0.3s;
+    --width-of-input: 300px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background-color: #EFEFEF;
+  
+  }
+  
+  /* styling of Input */
+  .inputNavbar {
+    font-size: 0.9rem;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  
+  /* styling of animated border */
+  .formNavbar:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  
+  /* Hover on Input */
+  .formNavbar:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* here is code of animated border */
+  .formNavbar:focus-within:before {
+    transform: scale(1);
+  }
+  
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  
+  }
+  
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  main {
+    padding: 57px 27px;
+    flex: 1 1 auto;
+    background-color: #282D35;
+    color: brown;
+  }
+  
+  main.dark {
+    background-color: white;
+    color: white;
+  }
+  
+  
+  .toggler {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+  }
+  
+  .toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+  }
+  
+  nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+  }
+  
+  .toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  nav.dark .toggler--slider--circle {
+    background-color: black;
+  }
+  
+  .toggler--light {
+    color: #2B283A;
+  }
+  
+  nav.dark .toggler--light {
+    color: #918E9B;
+  }
+  
+  .toggler--dark {
+    color: #D5D4D8;
+  }
+  
+  nav.dark .toggler-dark {
+    color: #FFFFFF;
+  }
+  
+  nav.dark .toggler--slider {
+    justify-content: flex-end;
+  }
+  nav {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    z-index: 1;
+  }
+  
+  nav.dark {
+    background-color: #21222A;
+  }
+  
+  
+  .containerApp{
+  display: flex;
+  
+  }
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width:1200px) {
+  
+  .containerFriends{
+    width: 90%;
+  }
+  
+   
+  .headerFriends{
+    width: 90%;
+    margin: auto;
+    height: 8rem;
+    /* overflow: auto; */
+  }
+  
+  .friendDiv{
+    width: 5rem;
+    height: 60%;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .friendDiv h6 {
+    font-size: 13px;
+  }
+  .friendDiv img{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+  }
+  
+  .pictureUserMsg{
+    width: 10%;
+    padding: 0.5rem;
+  
+  }
+  .pictureUserMsg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .dataUserMsg{
+    margin-left: 2rem;
+    
+  }
+  
+  .dataUserMsg h4{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .dataUserMsg p{
+    font-size: 12px;
+  }
+  .form {
+    --input-bg: #edeaea;
+    --padding: 1.5em;
+    --rotate: 80deg;
+    --gap: 2em;
+    --icon-change-color: #15A986;
+    --height: 1.5rem;
+    width: 90%;
+    padding-inline-end: 1em;
+    position: relative;
+    border-radius: 40px;
+  }
+  
+  .form input{
+      font-size: 15px;
+  }
+  
+  
+  .receiver h3{
+    font-size: 18px;
+  }
+  
+
+  .textContainerConvReceiver{
+    /* width: 12rem; */
+  }
+  
+    
+  .l {
+    transform: translate(-10px,-4px);
+  }
+  .MsgInput {
+    transform: translate(8px,-3px);
+    color: rgb(48, 47, 47);
+    padding: 10px;
+  }
+  
+  .SendSVG {
+  
+    transform: translate(30px,-4px);
+  
+  }
+  
+  
+  }
+  
+  
+  @media screen and (max-width:1000px) {
+  .containerFriends{
+    display: none;
+  }
+  
+  .containerConversation{
+    width: 80%;
+  }
+  .ReceiverDiv{
+    margin-left: 60%;
+  }
+  
+  }
+  
+  @media screen and (max-width:800px) {
+  
+  
+  .containerConversation{
+    width: 90%;
+  }
+  .ReceiverDiv{
+    margin-left: 60%;
+  }
+  
+  }
+  @media screen and (max-width:700px) {
+  .ReceiverDiv{
+    margin-left: 50%;
+  }
+  
+  .l {
+    transform: translate(-20px,-4px);
+  }
+  .MsgInput {
+    transform: translate(10px,-3px);
+    color: rgb(48, 47, 47);
+    padding: 10px;
+  }
+  
+  .SendSVG {
+  
+    transform: translate(20px,-4px);
+  
+  }
+  
+  
+  
+  }
+  
+  @media screen and (max-width:500px) {
+  .ReceiverDiv{
+    margin-left: 40%;
+  }
+  
+  .l {
+    transform: translate(-30px,-4px);
+  }
+  .MsgInput {
+    transform: translate(10px,-3px);
+    color: rgb(48, 47, 47);
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .SendSVG {
+  
+    transform: translate(10px,-4px);
+  
+  }
+  
+  }
+  
+  @media screen and (max-width:450px) {
+  .ReceiverDiv{
+    margin-left: 25%;
+  }
+  
+  .l {
+    transform: translate(-40px,-4px);
+  }
+  .MsgInput {
+    transform: translate(10px,-3px);
+    color: rgb(48, 47, 47);
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .SendSVG {
+  
+    transform: translate(0px,-4px);
+  
+  }
+  
+  
+  }
+  
+  

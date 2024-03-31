@@ -1,0 +1,66 @@
+.ContRoom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.stream-page {
+   margin: auto;
+   margin-top: 10rem;
+   width: 60%;
+   /* background-color: #FFC49A; */
+   display: flex;
+   justify-content: center;
+  }
+  
+  .formStream {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .formStream div {
+    /* background-color: #FFC49A; */
+    margin-bottom: 0.6rem;
+    /* height: 90% ; */
+  }
+  
+   .formStream label {
+    display: block;
+    margin-bottom: -1rem;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold ;
+  }
+  
+  .formStream input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect overall width */
+    margin-bottom: 20px;
+  }
+  
+  .formStream input:focus {
+    border-color: #FFC49A;
+    outline: none; /* Removes the default focus outline */
+  }
+  
+  .formStream button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #FFC49A;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .formStream button:hover {
+    background-color: #e79b65; 
+  }
+  

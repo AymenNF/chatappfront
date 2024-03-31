@@ -1,0 +1,17 @@
+.global-info{
+    width: 80% ;
+    background-color: #F4FDFF;
+    margin: 1%;
+    border-radius: 20px;
+}
+.info-part{
+    margin-left: 3%;
+}
+@media screen and (max-width: 800px) {
+    .global-info{
+        width: 98%;
+    }
+}
+.second-info{
+    margin-right: 8%;
+}

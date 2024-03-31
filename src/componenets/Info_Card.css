@@ -1,0 +1,25 @@
+.global-info{
+    width: 80% ;
+    background-color: #F4FDFF;
+    margin: 1%;
+    border-radius: 20px;
+}
+.info-part{
+    margin-left: 3%;
+}
+.infoValue{
+    margin-left: 60%;
+}
+
+.save-icon{
+    margin-right: 10%;
+}
+span{
+    margin-right: 40%;
+    max-width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .global-info{
+        width: 98%;
+    }
+}

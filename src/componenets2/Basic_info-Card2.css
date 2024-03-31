@@ -1,0 +1,25 @@
+.Basic-info{
+    width: 30% ;
+    background-color: #F4FDFF;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 20px;
+
+}
+h5{
+    margin-left: 5%;
+}
+.info{
+    margin-left: 6%;
+    line-height: 0.3;
+
+}
+
+.edit-icon{
+    margin-right: 5%;
+}
+@media screen and (max-width: 800px) {
+    .Basic-info{
+        width: 98%;
+    }
+}
